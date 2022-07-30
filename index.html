@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>DevFinder - The GitHub Developer Search App</title>
+</head>
+<body>
+    <main>
+        <h1><i class="fas fa-laptop-code"></i> Dev<span class="headerAcc">Finder</span></h1>
+
+        <form id="searchBar">
+            <i class="fab fa-github-alt searchIcon"></i>
+            <input type="text" class="searchInput" placeholder="Enter GitHub username">
+            <div class="errorMsg invisible">Input Cannot Be Empty</div>
+            <button class="submitButton">Search</button>
+        </form>
+
+        <section id="displayResult">
+            <div class="dpDiv">
+                <img src="Images/GitHub default dp.png" alt="User Display Picture" class="dp">
+            </div>
+            <div id="right">
+                <div class="userInfo">
+                    <div class="userDes">
+                        <h2 class="userName">user <span class="headerAcc">name</span></h2>
+                        <h3 class="userID">@<span class="loginID">userName</span></h3>
+                        <div class="userBio">
+                            This user has no bio.
+                        </div>
+                    </div>
+
+                    <div id="accStats">
+                        <div class="reposBox box">
+                            <h4>repos</h4>
+                            <p class="repos">XX</p>
+                        </div>
+
+                        <div class="followersBox box">
+                            <h4>followers</h4>
+                            <p class="followers">XX</p>
+                        </div>
+ 
+                        <div class="followingBox box">
+                            <h4>following</h4>
+                            <p class="following">XX</p>
+                        </div>
+                    </div>
+
+                    <div class="accSocials">
+                        <div class="leftSoc soc">
+                            <p class="nation"><i class="fas fa-globe-americas"></i> <span class="location">Location</span></p>
+                            <p class="link"><i class="fas fa-link"></i> <span class="accLink">accountlink.com</span></p>
+                        </div>
+                        <div class="rightSoc soc">
+                            <p class="twitter"><i class="fab fa-twitter"></i> <span class="twitterAcc">@twitterAccount</span></p>
+                            <p class="orga"><i class="fas fa-building"></i> <span class="company">Company</span></p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

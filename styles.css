@@ -1,0 +1,200 @@
+:root{
+    --bg: #10002b;
+    --container: #240046;
+    --accent: #c77dff;
+}
+
+.searchInput, .submitButton{
+    font-family: inherit;
+}
+
+#searchBar, #displayResult{
+    width: 100%;
+    background-color: var(--container);
+    border-radius: 7px;
+}
+
+.userDes, .accStats{
+    width: 85%;
+}
+
+.invisible{
+    display: none;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #10002b;
+    color: white;
+}
+
+.headerAcc{
+    color: var(--accent);
+}
+
+main{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+}
+
+#searchBar{
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.focusSearch{
+    border: 1.5px solid var(--accent);
+    box-sizing: border-box;
+}
+
+.searchIcon{
+    font-size: 1.8rem;
+}
+
+.searchInput{
+    height: 100%;
+    width: 70%;
+    padding: 0;
+    border: none;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: var(--container);
+    color: var(--accent);
+}
+
+.invalidInput{
+    border: 1.5px solid #e63946;
+}
+
+.searchInput:focus{
+    outline: none;
+}
+
+.submitButton{
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    padding: 0;
+    background-color: var(--accent);
+    color: #240046;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    background-color: var(--bg);
+    color: var(--accent);
+}
+
+.errorMsg{
+    position: absolute;
+    left: 6rem;
+    top: 3.2rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #e63946;
+}
+
+#displayResult{
+    margin-top: 2.5rem;
+    height: 26.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+.dpDiv{
+    width: 5.5rem;
+}
+
+.dp{
+    width: inherit;
+    border-radius: 50%;
+}
+
+#right{
+    width: 70%;
+    height: 100%;
+}
+
+.userInfo{
+    /* background-color: red; */
+    height: 100%;
+}
+
+.userDes{
+    /* background-color: green; */
+    width: 85%;
+}
+
+.userDes .userName{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.userDes .userID{
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--accent);
+}
+
+.userDes .userBio{
+    /* background-color: pink; */
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+#accStats{
+    /* background-color: blue; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7rem;
+}
+
+.box{
+    width: 9rem;
+    height: 6.5rem;
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.box h4{
+    margin: 0;
+}
+
+.box p{
+    font-size: 1.8rem;
+    margin-top: 0.6rem;
+}
+
+.box p, .box h4{
+    font-weight: 100;
+}
+
+.accSocials{
+    width: 80%;
+    /* background-color: red; */
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accSocials .soc{
+    width: 100%;
+    margin: auto;
+}
